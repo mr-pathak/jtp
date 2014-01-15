@@ -1,0 +1,11 @@
+NOTE: *not* recommended 
+If remote repository is not working add the following code to POM.xml 
+in project directory
+
+  <repositories> 
+    <repository>
+	  <id>in-project</id>
+	  <name>In Project Repo</name>
+	  <url>file://${project.basedir}/lib</url>
+    </repository>
+  </repositories> 

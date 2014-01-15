@@ -1,0 +1,137 @@
+        __________   __________     _____
+        \___  ____\  \___  ____\   |  _  \
+            | |          | |       | (_)  |
+            | |          | |       |  ___/
+            | |          | |       | |
+       _____/ /          | |       | |
+       \_____/           |_|       |_|
+
+[PROJECT NAME]
+    Java trusted Peer (JTP)
+    <https://github.com/mr-pathak/jtp>
+
+--------------------------------------------------------------------------------
+
+[SUMMARY]
+    * JTP is an open-source peer-to-peer file sharing application. 
+    * JTP calculates trust between peers based on their interaction.
+
+--------------------------------------------------------------------------------
+
+[DESCRIPTION]
+    * In an peer-to-peer information system, peers often have to interact with
+      unfamiliar peers and need to manage the risk that is involved 
+      with the interactions.
+    * JTP is a small step towards development of a trust mechanism for 
+      such system so peers can quantify and compare the trustworthiness of other
+      peers and perform trusted interactions based on peer ratings.
+    * As a project, JTP aim to develop and maintain trust rating for each node
+      which is based on its interaction and reviews by other peers.
+    * JTP source code is freely available.
+    * JTP is under heavy development and  needs plenty of fixes & enhancements.
+
+--------------------------------------------------------------------------------
+
+[Version]
+    0.0.5
+    Details of the latest version can be found on:
+        <https://github.com/mr-pathak/jtp>
+
+--------------------------------------------------------------------------------
+
+[LICENSE]
+    GNU GENERAL PUBLIC LICENSE (Version 3)
+    Please see the file called 'LICENSE' for more details.
+
+--------------------------------------------------------------------------------
+
+[AUTHOR]
+    Mitesh pathak
+    <miteshpathak05@gmail.com>
+    <http://miteshpathak.com>
+
+--------------------------------------------------------------------------------
+
+[CONTENTS]
+    I.      SOURCE CODE
+    II.     REQUIREMENT & BUILDING
+    III.    DOWNLOADS & TESTING
+    IV.     DOCUMENTATION
+    V.      KNOWN ISSUES AND WORKAROUNDS
+    VI.     TECHNICAL SUPPORT
+    VII.    EXTERNAL LINKS
+
+I       SOURCE CODE
+        -----------
+
+    The source code can be obtained from <https://github.com/mr-pathak/jtp>.
+    More information on JTP is available on <http://jtp-java.appspot.com>.
+
+II      REQUIREMENT & BUILDING
+        -----------------------
+
+    Requirement: 
+        Sun Java JDK 1.7.x or higher version
+        Maven 3.1.x or higher
+    Building latest version from source:
+        % git clone git://git@github.com/mr-pathak/jtp.git jtp-trunk
+        % cd jtp-trunk
+        % mvn install
+
+III     DOWNLOADS & TESTING
+        -------------------
+
+    Users can download already build and ready to use jar file from './target' 
+    directory named 'jtp-*-jar-with-dependencies.jar'.
+    To run it:
+        % java -jar jtp-*-jar-with-dependencies.jar
+
+    OR
+    run script './bin/start-jtp.sh':
+        % ./bin/start-jtp.sh <username> <dirToShare>
+
+IV      Documentation
+        -------------
+
+    The documentation available as of the date of this release is included 
+    in HTML format in the 'target/site/' directory.  The most up-to-date 
+    documentation can be found at <https://github.com/mr-pathak/jtp>.
+
+V.      KNOWN ISSUES AND WORKAROUNDS
+        -----------------------------
+     Report bugs/issues on <https://github.com/mr-pathak/jtp/issues>. 
+
+VI.     TECHNICAL SUPPORT
+        -----------------
+    Visit <http://jtp-java.appspot.com> for more information OR
+    send a mail to <jtp-java@appspot.gserviceaccount.com>.
+
+VII     External Links
+        --------------
+    [1] Freepastry <http://www.freepastry.org/FreePastry/>
+    [2] Commons IO <http://commons.apache.org/proper/commons-io/>
+    [3] Scribe <www.freepastry.org/SCRIBE/default.htm>
+    [4] Bayesian Network Trust Model in Peer-to-Peer Networks 
+        <http://link.springer.com/chapter/10.1007%2F978-3-540-25840-7_3>
+    [5] FreePastry tutorial <http://trac.freepastry.org/wiki/FreePastryTutorial>
+    [6] Maven tutorial <http://maven.apache.org/guides/getting-started/>
+    
+--------------------------------------------------------------------------------
+
+[TODO]
+    JTP is still far from a finished project and aim is to improve enhance it
+    features to make it a complete package. JTP is good to get your hand dirty
+    but not mature enough to be used at higher level.
+    Following are few milestone that will enhance JTP.
+
+    * Implement GUI for JTP
+    * Implement different Trust based algorithms
+    * Improve current naive trust algorithm
+    * Replace Scribe Node by implementing similar Node
+    * Add features like chatting, multiple upload
+    * Add unit tests for JTP
+    * Improve documentation
+    * Improve exception handling
+    * Improve binary script (no Windows support at the moment)
+
+--------------------------------------------------------------------------------
